@@ -1,0 +1,300 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #eee;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  img {
+    width: 70%;
+  }
+  .container {
+    max-width: 1300px;
+    margin: 0px auto 0px auto;
+    padding: 0px 30px;
+    border: 1px solid gb(217, 63, 63);
+
+    @media (min-width: 1200px) and (max-width: 1441px) {
+      max-width: 1250px;
+      padding: 0px 36px;
+    }
+  
+    @media (max-width: 767px) {
+      padding: 0px 30px;  
+    }
+  
+    @media (max-width: 479px) {
+      padding: 0px 20px 0px 20px;
+    }
+  }
+  
+  .navbar {
+    background: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 100%;
+}
+    .navbar-top {
+    background: linear-gradient(90deg, rgb(100, 59, 59) 0%, rgba(255,255,255,0) 100%);
+         
+}
+    .logo-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px 0px;
+
+}     
+     .logo{
+        width: 150px;
+ }
+      
+      .search-bar {
+        display: flex;
+        align-items: stretch;
+        width: 25%;
+        border-left: 5px solid ; 
+
+        input {
+          padding: 8px;
+          width: 100%;
+          border: none;
+          border: 2px solid transparent;
+         /* transition: ;*/
+
+          &:focus {
+            border: 2px solid $blue-color;
+            outline: none;
+          }
+
+        }
+    }
+
+        .button {
+          background: $blue-color;
+          border: none;
+          padding: 8px;
+          transition: all $transition-time ease-in-out;
+
+          &:hover {
+            background: darken($blue-color, 5%);
+         
+          i {
+            color: white;
+            font-size: 20px;
+          }
+        }
+      }
+
+  
+/*.navbar-bottom Links---*/
+
+.navbar-bottom {
+        padding: 0;
+
+      }
+    
+    .nav-links {   
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      color: white;
+      list-style-type: none;
+
+
+    }
+
+    li {
+        position: relative;
+        text-decoration: none;
+        font-weight: 900;
+        padding: 5px 0;
+        border: 5px solid transparent;
+        transition: all $transition-time ease-in-out;
+    }
+
+/* ============ HERO SECTION ============= */
+    /*Collections---*/
+
+    .hero {
+        position: relative;
+        background: url('https://images.pexels.com/photos/11429038/pexels-photo-11429038.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load') center/cover no-repeat;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+.content-box .btn-box .hero-cta:before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	content: "";
+	border-radius: 7px;
+	transform: scaleX(0);
+	transform-origin: top right;
+	transition: transform .5s cubic-bezier(.86, 0, .07, 1);
+	background-color: #fff;
+}
+
+
+.grid_1 {
+    background-image: -webkit-radial-gradient()
+    background-color: ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100svh - ( var(--bdr-size) * 2));
+    width: calc(100svw - ( var(--bdr-size) * 3));
+    display: grid;
+    place-items: center;
+  }
+
+  .hero h1 {
+    color: white;
+    text-align: center;
+    
+    font-size: 2.1rem;
+    text-shadow: .1rem .2rem gray;
+    box-shadow: 0 0 .5rem black;
+    background: rgba(40, 40, 40, .6);
+    padding: .5ch 2ch;
+    margin-bottom: 2ch;
+  }
+
+/*Women Collections---*/
+
+.header{
+    height: 20vh;
+    margin-top: 10vh;
+    text-align: center;
+}
+.header h1 {
+    font-size: 30px;
+    color: #3269a8;
+    text-align: center;
+    text-shadow: 1px 1px 5px #eee;
+}
+
+    
+.flexbox_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 40px;
+    
+}
+.images{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    transition: .5s ease;
+    box-shadow: 1px 1px 5px #333;
+    cursor: pointer;
+}
+.passiveimage{
+    z-index: -2;
+    transform: scale(.95);
+    filter: grayscale(100%) blur(3px);
+    -webkit-filter: grayscale(100%) blur(3px);
+    -moz-filter: grayscale(100%) blur(3px);
+    -o-filter:grayscale(100%) blur(3px);
+    -ms-filter:grayscale(100%) blur(3px);
+}
+.images:hover{
+    /* transition: .5s ease; */
+    transform: scale(1.3);
+    box-shadow: 3px 3px 15px #333;
+}
+.image1{
+    background: url("https://slimages.macysassets.com/is/image/MCY/products/7/optimized/24729077_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&wid=1200&fmt=webp") center / cover;
+}
+.image2{
+    background: url("https://slimages.macysassets.com/is/image/MCY/products/0/optimized/24196340_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&wid=1200&fmt=webp") center / cover;
+}
+.image3{
+    background: url("https://slimages.macysassets.com/is/image/MCY/products/6/optimized/25163626_fpx.tif?op_sharpen=1&wid=500&fit=fit,1&fmt=webp") center / cover;
+}
+.image4{
+    background: url("https://slimages.macysassets.com/is/image/MCY/products/7/optimized/28448267_fpx.tif?qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=webp&wid=201&hei=245") center / cover;
+}
+.image5{
+    background: url("https://slimages.macysassets.com/is/image/MCY/products/4/optimized/14588054_fpx.tif?$filterlrg$&wid=327") center / cover;
+}
+.image6{
+    background: url("") center / cover;
+}
+
+/*Men Collections---*/
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+
+}
+
+
+
+.heading {
+	font-family: "Montserrat", Arial, sans-serif;
+	font-size: 4rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: #1a1a1a;
+}
+
+.container h1 {
+
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+
+/*Women Collections---*/
+
+
+
+/*Women Collections---*/
+
+
+
+/*Women Collections---*/
